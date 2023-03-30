@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleP.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pagando</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <img src="img/logo.png" width="60px">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="Inicio.html">Inicio</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Principal.html">Perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="BuscarCurso.html">Tus Cursos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="BuscarCurso.html">Programacion</a></li>
+                  <li><a class="dropdown-item" href="BuscarCurso.html">Diseño</a></li>
+                  <li><a class="dropdown-item" href="BuscarCurso.html">Negocios</a></li>
+                  <li><a class="dropdown-item" href="BuscarCurso.html">Musica</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+
+
+    <section class="form-register" >
+        <h2>Usted esta comprando un curso</h2>
+        <form action="" method="post" id="fomrPago">
+
+            <div class="row">
+                <div class="col">
+                    <label for="formGroupExampleInput" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" placeholder="Escribe tus nombres"
+                        aria-label="First name" id="names">
+                </div>
+                <div class="col">
+                    <label for="formGroupExampleInput" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" placeholder="Escribe tus apellidos" aria-label="Last name" id="lastnames">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Numero de tarjeta</label>
+                <input type="text" class="form-control" id="num_tarjeta"
+                    placeholder="Escribe el numero de tarjeta">
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="formGroupExampleInput" class="form-label">Fecha de vencimiento</label>
+                    <input type="text" class="form-control" placeholder="YY/MM"
+                        aria-label="First name" id="date">
+                </div>
+                <div class="col">
+                    <label for="formGroupExampleInput" class="form-label">CVV</label>
+                    <input type="text" class="form-control" placeholder="Escribe el CVV" aria-label="Last name" id="cvv">
+                </div>
+            </div>
+            
+            <a type="submit" href="BuscarCurso.html" class="btn btn-secondary"  style=" margin-top: 5%" >Regresar</a>
+            <button type="submit" class="btn btn-success"  style="margin-top: 5%" >Pagar</button>
+            <p class="Warnings" id="Warnings"></p>
+        </form>
+    </section>
+<br>
+<br>
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="img/logo.png">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>SOBRE NOSOTROS</h2>
+              <p>Enseña al mundo en línea</p>
+              <p>Crea un curso en vídeo en línea, llega a estudiantes de todo el mundo y gana dinero</p>
+          </div>
+          <div class="box">
+              <h2>SIGUENOS</h2>
+              <div class="red-social">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+              </div>
+          </div>
+      </div>
+      <div class="grupo-2">
+          <small>&copy; 2023 <b>UDEMEX</b> - Todos los Derechos Reservados.</small>
+      </div>
+  </footer>
+
+    <script src="validacionesP.js"></script> 
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
